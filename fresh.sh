@@ -2,6 +2,7 @@
 
 ## Get me paru and some AUR STAT
 sudo pacman -S --needed base-devel
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 git clone https://aur.archlinux.org/paru.git
 cd paru && makepkg -si
 
