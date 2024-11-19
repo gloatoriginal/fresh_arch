@@ -7,7 +7,7 @@ source ~/.bashrc
 git clone https://aur.archlinux.org/paru.git
 cd paru && makepkg -si
 
-cd ~
+cd $HOME
 ## Install necessities
 paru -S variety solaar \
         flatpak flatseal \
