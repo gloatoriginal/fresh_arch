@@ -13,8 +13,6 @@ paru -S variety solaar \
         flatpak flatseal \
         steam heroic-games-launcher-bin \
         visual-studio-code-bin dbeaver git \
-        linux-lts linux-lts-headers \
-        linux-rt linux-rt-headers \
         kexec-tools cronie \
         virt-manager moonlight-qt-bin youtube-music-bin stremio \
         filelight discover partitionmanager \
@@ -22,6 +20,7 @@ paru -S variety solaar \
         #nvidia-open-dkms \
         --noconfirm
 
+sudo systemctl enable --now cronie
 ## Setup kexec updater
 git clone https://github.com/gloatoriginal/arch_update \
         && chmod +x ./arch_update/bootstrap.sh \
