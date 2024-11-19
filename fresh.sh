@@ -7,15 +7,15 @@ cd paru && makepkg -si
 
 cd ~
 ## Install necessities
-paru -S variety solaar \ ##Background & Logitech
-        flatpak flatseal \ ## Flatpak shtuff
-        steam hhd heroic-games-launcher-bin \ ##Gaming stuff
-        visual-studio-code-bin dbeaver git \ ## Development stuff
-        linux-lts linux-lts-headers \ ## LTS
-        linux-rt linux-rt-headers \ ## RT
-        kexec-tools cronie \ ## Scheduling & Reboots
+paru -S variety solaar \
+        flatpak flatseal \
+        steam hhd heroic-games-launcher-bin \
+        visual-studio-code-bin dbeaver git \
+        linux-lts linux-lts-headers \
+        linux-rt linux-rt-headers \
+        kexec-tools cronie \
         virt-manager moonlight-qt-bin youtube-music-bin stremio \
-        filelight discover partitionmanager \ ## OS Tools
+        filelight discover partitionmanager \
         #nvidia-open-dkms \
         --noconfirm
 
