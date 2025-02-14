@@ -16,7 +16,7 @@ cd $HOME
 paru -S variety solaar \
         flatpak flatseal \
         steam heroic-games-launcher-bin \
-        visual-studio-code-bin dbeaver git \
+        visual-studio-code-bin proton-ge-custom-bin dbeaver git \
         cronie \
         virt-manager moonlight-qt-bin youtube-music-bin stremio \
         filelight discover partitionmanager \
