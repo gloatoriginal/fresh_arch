@@ -2,9 +2,9 @@
 
 ## Get me paru and some AUR STAT
 sudo pacman -S --needed base-devel
-## Stolen from redoxOS
-curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
-source ~/.bashrc
+## Stolen from redoxOS -- Doesn't work as intended, paru still claims cargo/rust isn't implemented.
+##curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
+##source ~/.bashrc
 git clone https://aur.archlinux.org/paru.git
 cd paru && makepkg -si
 
