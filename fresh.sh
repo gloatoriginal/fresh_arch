@@ -13,7 +13,7 @@ rm -rf paru
 
 cd $HOME
 ## Install necessities
-paru -S variety solaar \
+paru -S variety solaar btop \
         flatpak flatseal apparmor \
         steam heroic-games-launcher-bin \
         visual-studio-code-bin proton-ge-custom-bin dbeaver git \
