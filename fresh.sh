@@ -14,7 +14,7 @@ rm -rf paru
 cd $HOME
 ## Install necessities
 paru -S variety solaar \
-        flatpak flatseal \
+        flatpak flatseal apparmor \
         steam heroic-games-launcher-bin \
         visual-studio-code-bin proton-ge-custom-bin dbeaver git \
         cronie firefox timeshift power-profiles-daemon \
@@ -25,6 +25,7 @@ paru -S variety solaar \
         --noconfirm
 
 sudo systemctl enable --now cronie
+sudo systemctl enable --now apparmor
 
 #echo "git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions"
 #git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
