@@ -17,7 +17,7 @@ paru -S variety solaar \
         flatpak flatseal \
         steam heroic-games-launcher-bin \
         visual-studio-code-bin proton-ge-custom-bin dbeaver git \
-        cronie firefox timeshift \
+        cronie firefox timeshift power-profiles-daemon \
         virt-manager moonlight-qt-bin youtube-music-bin stremio \
         filelight discover partitionmanager \
         zsh-autosuggestions zsh-syntax-highlighting zsh-fast-syntax-highlighting zsh \
