@@ -1,15 +1,16 @@
 #!/bin/bash
 
-## Get me paru and some AUR STAT
-sudo pacman -S --needed base-devel
-## Stolen from redoxOS -- Doesn't work as intended, paru still claims cargo/rust isn't implemented.
-##curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain stable
-##source ~/.bashrc
-git clone https://aur.archlinux.org/paru.git
-cd paru && makepkg -si
+## attempt to add chaotic aur to download paru from it
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key 3056513887B78AEB
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+echo "[chaotic-aur]" >> /etc/pacman.conf
+echo "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 
-cd ..
-rm -rf paru
+sudo pacman -Syu --noconfirm
+
+sudo pacman -S paru --noconfirm
 
 cd $HOME
 ## Install necessities
@@ -21,7 +22,7 @@ paru -S variety solaar btop \
         virt-manager moonlight-qt-bin youtube-music-bin stremio \
         filelight discover partitionmanager \
         zsh-autosuggestions zsh-syntax-highlighting zsh-fast-syntax-highlighting zsh \
-        nvidia-open-dkms lib32-nvidia-utils \
+        tmux alacritty \
         --noconfirm
 
 sudo systemctl enable --now cronie
