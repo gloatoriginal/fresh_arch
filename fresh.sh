@@ -27,6 +27,7 @@ paru -S variety solaar btop \
 
 sudo systemctl enable --now cronie
 sudo systemctl enable --now apparmor
+sudo systemctl enable --now power-profiles-daemon
 
 #echo "git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions"
 #git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
