@@ -14,7 +14,7 @@ sudo pacman -S paru --noconfirm
 
 cd $HOME
 ## Install necessities
-paru -S variety solaar btop \
+paru -S variety solaar btop pacman-contrib \
         flatpak flatseal apparmor \
         steam heroic-games-launcher-bin \
         visual-studio-code-bin proton-ge-custom-bin dbeaver git \
