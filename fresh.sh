@@ -19,7 +19,7 @@ paru -S variety solaar btop pacman-contrib \
         steam heroic-games-launcher-bin \
         visual-studio-code-bin proton-ge-custom-bin dbeaver git \
         cronie firefox timeshift power-profiles-daemon \
-        virt-manager moonlight-qt-bin youtube-music-bin stremio \
+        virt-manager moonlight-qt-bin stremio \
         filelight discover partitionmanager \
         zsh-autosuggestions zsh-syntax-highlighting zsh-fast-syntax-highlighting zsh \
         tmux alacritty \
