@@ -15,9 +15,9 @@ sudo pacman -S paru --noconfirm
 cd $HOME
 ## Install necessities
 paru -S variety solaar btop pacman-contrib \
-        flatpak flatseal apparmor \
-        steam heroic-games-launcher-bin \
-        visual-studio-code-bin proton-ge-custom-bin dbeaver git \
+        flatpak flatseal apparmor man \
+        steam heroic-games-launcher-bin proton-ge-custom-bin \
+        visual-studio-code-bin dbeaver git \
         cronie firefox timeshift power-profiles-daemon \
         virt-manager moonlight-qt-bin stremio \
         filelight discover partitionmanager \
